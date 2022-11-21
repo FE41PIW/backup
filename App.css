@@ -1,0 +1,208 @@
+* {
+  font-family: "NanumBarunGothic";
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100%;
+  overflow: none;
+  background-image: url("../public/wallpaper.jpeg");
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 660px;
+  background-color: rgba(0, 0, 0, 0.659);
+}
+
+.login_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.id_input_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(61, 61, 61);
+  width: 70%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.password_input_container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(61, 61, 61);
+  width: 70%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.587);
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login_title {
+  color: white;
+  margin-top: 4.5rem;
+  margin-left: 4.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.login_input {
+  width: auto;
+  position: absolute;
+  margin-top: 12px;
+  height: 35px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  font-size: 18px;
+  width: 290px;
+}
+
+.password_input {
+  width: auto;
+  position: absolute;
+  margin-top: 12px;
+  height: 35px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  font-size: 18px;
+  width: 290px;
+}
+
+.login_label {
+  margin-top: 10px;
+  font-size: 12px;
+  position: relative;
+  color: rgb(115, 115, 115);
+}
+
+.password_label {
+  margin-top: 10px;
+  font-size: 12px;
+  position: relative;
+  color: rgb(115, 115, 115);
+}
+
+.button_container {
+  background-color: red;
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.login_button {
+  background-color: red;
+  border: none;
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.caution {
+  margin: 20px;
+  font-weight: 400;
+  width: 70%;
+  display: inline-block;
+  color: rgb(182, 177, 177);
+}
+
+.login_checkbox {
+  margin: 15px;
+  margin-right: 45%;
+  color: gray;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.footer_bottom {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .login_container {
+    width: 90%;
+    background-color: black;
+  }
+  body {
+    background-image: none;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .id_input_container {
+    width: 70%;
+  }
+  .section {
+    width: 100%;
+  }
+
+  .login_title {
+    margin-left: 0;
+  }
+  .login_main_container {
+    align-items: flex-start;
+  }
+
+  .id_input_container {
+    width: 100%;
+  }
+
+  .password_input_container {
+    width: 100%;
+  }
+
+  .button_container {
+    width: 100%;
+  }
+
+  .login_input {
+    width: 80%;
+  }
+}
